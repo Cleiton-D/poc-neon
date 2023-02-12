@@ -11,7 +11,7 @@ export class UserController {
   }
 
   @Get()
-  public async getUsers(@Body() data) {
+  public async getUsers() {
     const start = performance.now();
     const result = await this.userService.getUsers();
     const end = performance.now();
